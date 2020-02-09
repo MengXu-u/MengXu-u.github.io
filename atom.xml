@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mengxu-u.github.io/"/>
-  <updated>2020-02-09T17:46:39.510Z</updated>
+  <updated>2020-02-09T19:03:29.090Z</updated>
   <id>https://mengxu-u.github.io/</id>
   
   <author>
@@ -17,36 +17,77 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>From-0-to-1:YourFirstKotlinApp</title>
-    <link href="https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/"/>
-    <id>https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/</id>
-    <published>2020-02-09T17:46:39.510Z</published>
-    <updated>2020-02-09T17:46:39.510Z</updated>
+    <title>Photo - Flowers in Queens Building</title>
+    <link href="https://mengxu-u.github.io/2020/02/09/Photo0209/"/>
+    <id>https://mengxu-u.github.io/2020/02/09/Photo0209/</id>
+    <published>2020-02-09T18:53:14.132Z</published>
+    <updated>2020-02-09T19:03:29.090Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Get started&lt;br&gt;New a project, select Empty Activity, enter package name, select kotlin, enter the game name as T
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h3&gt;Location: Queens Building, London &lt;a class=&quot;post-anchor&quot; href=&quot;#undefined&quot;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3&gt;Time: 8 Feb, 2020 &lt;a c
       
     
     </summary>
     
     
+      <category term="Photo" scheme="https://mengxu-u.github.io/categories/Photo/"/>
+    
+    
+      <category term="摄影" scheme="https://mengxu-u.github.io/tags/%E6%91%84%E5%BD%B1/"/>
+    
+      <category term="花" scheme="https://mengxu-u.github.io/tags/%E8%8A%B1/"/>
+    
+      <category term="修图" scheme="https://mengxu-u.github.io/tags/%E4%BF%AE%E5%9B%BE/"/>
+    
+      <category term="伦敦" scheme="https://mengxu-u.github.io/tags/%E4%BC%A6%E6%95%A6/"/>
     
   </entry>
   
   <entry>
-    <title>FirstArticle</title>
+    <title>From 0 to 1 - Your First Kotlin APP</title>
+    <link href="https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/"/>
+    <id>https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/</id>
+    <published>2020-02-09T17:46:39.510Z</published>
+    <updated>2020-02-09T18:49:59.301Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;h2 id=&quot;Get-started&quot;&gt;Get started&lt;a class=&quot;post-anchor&quot; href=&quot;#Get-started&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;New a project, select Empty 
+      
+    
+    </summary>
+    
+    
+      <category term="Tutorial" scheme="https://mengxu-u.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="Android Studio" scheme="https://mengxu-u.github.io/tags/Android-Studio/"/>
+    
+      <category term="Kotlin" scheme="https://mengxu-u.github.io/tags/Kotlin/"/>
+    
+      <category term="编程" scheme="https://mengxu-u.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First Article</title>
     <link href="https://mengxu-u.github.io/2020/02/09/FirstArticle/"/>
     <id>https://mengxu-u.github.io/2020/02/09/FirstArticle/</id>
     <published>2020-02-09T10:46:27.282Z</published>
-    <updated>2020-02-09T10:46:27.282Z</updated>
+    <updated>2020-02-09T18:01:32.820Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="Tutorial" scheme="https://mengxu-u.github.io/categories/Tutorial/"/>
     
     
   </entry>
@@ -56,18 +97,26 @@
     <link href="https://mengxu-u.github.io/2020/02/09/hello-world/"/>
     <id>https://mengxu-u.github.io/2020/02/09/hello-world/</id>
     <published>2020-02-09T08:46:38.552Z</published>
-    <updated>2020-02-09T08:46:38.552Z</updated>
+    <updated>2020-02-09T17:59:23.301Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Che
       
     
     </summary>
     
     
+      <category term="Tutorial" scheme="https://mengxu-u.github.io/categories/Tutorial/"/>
+    
+    
+      <category term="开始使用" scheme="https://mengxu-u.github.io/tags/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8/"/>
+    
+      <category term="练习" scheme="https://mengxu-u.github.io/tags/%E7%BB%83%E4%B9%A0/"/>
+    
+      <category term="hexo" scheme="https://mengxu-u.github.io/tags/hexo/"/>
     
   </entry>
   

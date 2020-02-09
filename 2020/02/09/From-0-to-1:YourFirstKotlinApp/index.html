@@ -16,7 +16,7 @@
     <meta name="description" content="" />
     
     <title>
-      Archives - Hexo
+      From-0-to-1:YourFirstKotlinApp - Hexo
     </title>
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
@@ -61,7 +61,7 @@
           Home
         </a>
         
-        <a href="/archives" class="current">
+        <a href="/archives" class="">
           Archives
         </a>
         
@@ -115,7 +115,7 @@
             Home
           </a>
           
-          <a href="/archives" class="current">
+          <a href="/archives" class="">
             Archives
           </a>
           
@@ -172,61 +172,166 @@
     </div>
     <div id="container">
       <div class="main animated bounceInRight delay-0.7s">
-        <div id="archives">
-    
-        <div class="title">
-            Archives 
-            
-        </div>
-    
-
-
-
-
-    
-    
-    <section class="wrap">
-        <div class="meta">
-            <a href="/archives/2020" >
-                2020
-            </a>
-        </div>
-        <div class="year">
-            
-            <article class="item">
-            <a href="/2020/02/09/From-0-to-1:YourFirstKotlinApp/" title="From-0-to-1:YourFirstKotlinApp">
-                <span>2020/02/09</span>
-                <span>From-0-to-1:YourFirstKotlinApp</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/02/09/FirstArticle/" title="FirstArticle">
-                <span>2020/02/09</span>
-                <span>FirstArticle</span>
-            </a>
-            </article>
-            
-
-
-            <article class="item">
-            <a href="/2020/02/09/hello-world/" title="Hello World">
-                <span>2020/02/09</span>
-                <span>Hello World</span>
-            </a>
-            </article>
-            
-    
-        </div>
-    </section>
+        <article class="post-entry">
+    <div class="header">
       
-<div class="paginator">
-    <span class="page-number current">1</span>
-</div>
-</div>
+      <div class="title">From-0-to-1:YourFirstKotlinApp</div>
+      <div class="meta">
+        <span class="item">
+          <span class="iconfont icon-time-circle"></span>
+          <span>2020/02/09</span>
+        </span>
 
+        
+
+        
+        
+        
+      </div>
+      <div>
+      </div>
+    </div>
+    <html><head></head><body><p>Get started<br>New a project, select Empty Activity, enter package name, select kotlin, enter the game name as Time Fighter, and try to run the app to show “hello world” on the screen. </p>
+<ol>
+<li><p>Create new project : enter the name – Time Fighter, your package name</p>
+</li>
+<li><p>As default</p>
+</li>
+<li><p>Empty Activity</p>
+</li>
+<li><p>Press “run” arrow in the right-top corner</p>
+</li>
+<li><p>Wait and get the “hello world”</p>
+</li>
+</ol>
+<p>Add UI<br>2.1 Add TextView: your score<br>2.2 Add TextView : time left<br>2.3 Positioning Items (your score & time left)<br>2.4 Adding a Constraint: tap me</p>
+<ol>
+<li><p>Open the activity_main.xml</p>
+</li>
+<li><p>Drag the Textview to the left corner and the right corner</p>
+</li>
+<li><p>Delete the “hello world” and drag the button to the center</p>
+</li>
+<li><p>Positioning each item to correctly shown</p>
+</li>
+<li><p>Fill in the elements for the three items<br>Top-left: your score (Textview) enter id & text</p>
+</li>
+</ol>
+<p>Top-right: left time (Textview) enter id & text</p>
+<p>Center : TapMe (button) enter id & text</p>
+<p>Add string name in the string.xml<br><string name="yourScore">Your Score: %1$d</string><br><string name="timeLeft">Time Left: %1$d</string><br><string name="tapMe">Tap Me!</string></p>
+<ol start="6">
+<li>Run to see the UI</li>
+</ol>
+<p> Add Activity<br>3.1 Adding Activity Properties<br>3.2 Handling Actions</p>
+<ol>
+<li><p>Open the MyActivity.kt</p>
+</li>
+<li><p>Add Activity Properties </p>
+<ol>
+<li>internal lateinit var tapMeButton: Button</li>
+<li>internal lateinit var gameScoreTextView: TextView</li>
+<li>internal lateinit var timeLeftTextView: TextView</li>
+</ol>
+</li>
+</ol>
+<p>And </p>
+<ol>
+<li>tapMeButton = findViewById(R.id.tapMeButton)</li>
+<li>gameScoreTextView = findViewById(R.id.gameScoreTextView)</li>
+<li>timeLeftTextView = findViewById(R.id.timeLeftTextView)</li>
+</ol>
+<p>Like this:</p>
+<p>The “Button”,”Textview” are red, hold on “alt” and press”enter”, then choose import to solve the error one by one.</p>
+<p>It would be like this:</p>
+<ol start="3">
+<li>Write function for “tapme”</li>
+<li>tapMeButton.setOnClickListener { view -></li>
+<li>incrementScore()</li>
+<li>}</li>
+</ol>
+<p>And press “alt” and “enter” and choose “create a new function” to make the incrementScore() to be not red.</p>
+<p>Initialize the score as zero:</p>
+<ol>
+<li>internal var score = 0<br>and<br>Fill in the new incrementScore function:</li>
+<li>private fun incrementScore() {</li>
+<li>score += 1</li>
+<li>val newScore = getString(R.string.yourScore, score)</li>
+<li>gameScoreTextView.text = newScore</li>
+<li>}<br>It would be like this:</li>
+</ol>
+<p>3.3 Display Starting Score<br>Add the starting score and display it by adding:<br>7.  // Show score<br>8.  gameScoreTextView.text = getString(R.string.yourScore, score)</p>
+<p>3.4 Adding a Countdown Timer<br>Add countdown timer definition(press alt and enter to import CountDownTimer)<br>9.  internal lateinit var countDownTimer: CountDownTimer<br>10.  internal val initialCountDown: Long = 60000<br>11.  internal val countDownInterval: Long = 1000<br>and resetGame funtion() definition(press alt and enter to create function)<br>12.  resetGame()</p>
+<p>Add resetGame funtion() value<br>13. private fun resetGame() {<br>14.  // Reset score<br>15.  score = 0<br>16.<br>17.  // Show score<br>18.  gameScoreTextView.text = getString(R.string.yourScore, score)<br>19.<br>20.  // Show initial time left<br>21.  val initialTimeLeft = initialCountDown / 1000<br>22.  timeLeftTextView.text = getString(R.string.timeLeft, initialTimeLeft)<br>23.<br>24.  countDownTimer = object : CountDownTimer(initialCountDown, countDownInterval) {<br>25.  override fun onTick(millisUntilFinished: Long) {<br>26.  val timeLeft = millisUntilFinished / 1000<br>27.  timeLeftTextView.text = getString(R.string.timeLeft, timeLeft)<br>28.  }<br>29.<br>30.  override fun onFinish() {<br>31.  // To Be Implemented Later<br>32.  }<br>33.  }<br>34.<br>35.  gameStarted = false<br>36.  }<br>It would be like:</p>
+<p>3.5 Starting and Ending the Game</p>
+<ol>
+<li><p>Add string name in the strings.xml<br><string name="gameOverMessage">Times up! Your score was: %1$d</string></p>
+</li>
+<li><p>Add gameStarted definition</p>
+</li>
+</ol>
+<ol start="3">
+<li>Add startGame in the incrementScore function<br>if(!gameStarted){<br>startGame()<br>}</li>
+</ol>
+<p>Define startGame(press alt+enter, create function)<br>private fun startGame() {<br> countDownTimer.start()<br> gameStarted = true<br>}</p>
+<ol start="4">
+<li>Add endGame in the resetGame function -> onFinish()<br>endGame()</li>
+</ol>
+<p>And endGame function(import the Toast by pressing alt+enter)<br>private fun endGame() {<br> Toast.makeText(this, getString(R.string.gameOverMessage, score), Toast.LENGTH_LONG).show()<br> resetGame()<br>}</p>
+<p>Run it to get:</p>
+</body></html>
+
+  
+    <div class="post-reward">
+    <div id="reward-button">打赏</div>
+      <div id="qr">
+        <div class="wrap">
+            
+            <div class="bg-wrap">
+              <a href="/images/zhifubao.png" target="_block" class="bg" style="background-image:url('/images/zhifubao.png')"></a>
+              支付宝
+            </div>
+            
+            
+            <div class="bg-wrap">
+                <a href="/images/weixin.png" target="_block" class="bg" style="background-image:url('/images/weixin.png')"></a>
+              微信
+            </div>
+            
+        </div>
+      </div>
+    </div>
+  
+  <div class="post-guide">
+    <div class="item left">
+        
+    </div>
+    <div class="item right">
+        
+          <a href="/2020/02/09/FirstArticle/">FirstArticle</a>
+        
+    </div>
+  </div>
+
+  
+
+  <div class="post-copyright">
+    <div class="auth">
+      本文作者：<a href="https://mengxu-u.github.io">Meng Xu</a>
+    </div>
+    <div class="link">
+      永久链接：<a href="https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/">https://mengxu-u.github.io/2020/02/09/From-0-to-1:YourFirstKotlinApp/</a>
+    </div>
+    <div class="declare">
+      版权声明：本文首发于<a href="https://mengxu-u.github.io">Meng Xu</a>的博客，转载请注明出处！
+    </div>
+  </div>
+
+  <div id="comment"></div>
+
+  
+  
+</article>
         <footer>
           <div class="copyright">
             ©2020
